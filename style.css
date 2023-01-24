@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    background: white;
+    width: min(42.8rem), 90%;
+    margin-top: -10rem;
+    text-align: center;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+}
+
+button {
+    display: grid;
+    background-color: #FF9500;
+    color: white;
+    font-weight: bold;
+    padding: 1.6rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: background .3s;
+    margin: 1.7rem auto 4.8rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #da850f;
+
+}
+
+/*tela1*/
+#fortuneCookie {
+    width: 30rem;
+    height: 20rem;
+    background-image: url(./images/fortune-cookie.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 2rem 3rem 0 0;
+}
+
+#fortuneCookie:hover {
+    cursor: pointer;
+    animation: shake .6s;
+    animation-iteration-count: infinite;
+}
+
+h1 { 
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 4.8rem;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/*tela2*/
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-top: 4.8rem;
+}
+
+#crackedCookie {
+    width: 30rem;
+    height: 20rem;
+    background-image: url(./images/opened-cookie.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 2rem 3rem 1rem 13rem;
+}
+
+.screen2 p {
+    margin-top: 1.7rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    padding: 1rem;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4rem;
+    animation: downtop 1s;
+}
+
+@keyframes shake {
+    5% { transform: translate(2px, 2px) rotate(0deg); }
+    15% { transform: translate(-2px, -2px) rotate(-1deg); }
+    25% { transform: translate(-2px, 0px) rotate(1deg); }
+    35% { transform: translate(3px, 1px) rotate(0deg); }
+    45% { transform: translate(1px, -1px) rotate(1deg); }
+    55% { transform: translate(-3px, 1px) rotate(0deg); }
+    65% { transform: translate(3px, 1px) rotate(-1deg); }
+    75% { transform: translate(-1px, -1px) rotate(1deg); }
+    85% { transform: translate(1px, 2px) rotate(0deg); }
+    95% {transform: translate(2px, 1px) rotate(-1deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @keyframes downtop {
+    0% { transform: translateY(50px);}
+    100% { transform: translateY(15);}
+  }
